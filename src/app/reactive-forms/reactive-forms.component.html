@@ -1,0 +1,40 @@
+<p>
+  reactive-forms works!
+</p>
+
+<form [formGroup]='userProfile' (ngSubmit)="saveUserData()" >
+
+
+    <input formControlName="firstName" placeholder="First name"  pattern="[a-zA-Z ]*" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
+    <div *ngIf="submitted && f.firstName.errors" class="is-error">
+        <div *ngIf="f.firstName.errors" >First Name is required</div>
+    </div>
+
+
+    <input formControlName="lastName" placeholder="Last name"  pattern="[a-zA-Z ]*" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+    <div *ngIf="submitted && f.lastName.errors" class="is-error">
+        <div *ngIf="f.lastName.errors" >Last Name is required</div>
+    </div>
+
+    <input formControlName="street" placeholder="street name"  pattern="[a-zA-Z ]*" [ngClass]="{ 'is-invalid': submitted && f.street.errors }">
+    <div *ngIf="submitted && f.street.errors" class="is-error">
+        <div *ngIf="f.street.errors" >street Name is required</div>
+    </div>
+
+    <input formControlName="state" placeholder="state name"  pattern="[a-zA-Z ]*" [ngClass]="{ 'is-invalid': submitted && f.street.errors }">
+    <div *ngIf="submitted && f.state.errors" class="is-error">
+        <div *ngIf="f.state.errors" >state Name is required</div>
+    </div>
+
+    <input formControlName="city" placeholder="city name"  [ngClass]="{ 'is-invalid': submitted && f.city.errors }">
+    <div *ngIf="submitted && f.city.errors" class="is-error">
+        <div *ngIf="f.city.errors" >state Name is required</div>
+    </div>
+    <input formControlName="zip" placeholder="Enter Zip" [ngClass]="{'is-invalid':submitted &&f.zip.errors}">
+    <div *ngIf="submitted && f.zip.errors" class="is-error">
+      <div *ngIf="f.zip.errors">
+        
+      </div>
+    </div>
+    <button type="submit">Save</button>
+</form>

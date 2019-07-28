@@ -1,0 +1,68 @@
+<p>
+  add-books works!
+</p>
+
+
+<form [formGroup]='bookDetails'  >
+
+
+    <input formControlName="bookName" placeholder="Book name"  pattern="[a-zA-Z ]*" [ngClass]="{ 'is-invalid': submitted && bookD.bookName.errors }">
+    <div *ngIf="submitted && bookD.bookName.errors" class="is-error">
+        <div *ngIf="bookD.bookName.errors" >Book Name is required</div>
+    </div>
+
+    <input formControlName="author" placeholder="Enter author name"  pattern="[a-zA-Z ]*" [ngClass]="{ 'is-invalid': submitted && bookD.author.errors }">
+    <div *ngIf="submitted && bookD.author.errors" class="is-error">
+        <div *ngIf="bookD.author.errors" >Author Name is required</div>
+    </div>
+    
+    <input formControlName="publication" placeholder="Enter publication name"  pattern="[a-zA-Z ]*" [ngClass]="{ 'is-invalid': submitted && bookD.publication.errors }">
+    <div *ngIf="submitted && bookD.publication.errors" class="is-error">
+        <div *ngIf="bookD.publication.errors" >Publication Name is required</div>
+    </div>
+
+    <input formControlName="noOfCopy" placeholder="Enter  Number Copy "  [ngClass]="{ 'is-invalid': submitted && bookD.noOfCopy.errors }">
+    <div *ngIf="submitted && bookD.noOfCopy.errors" class="is-error">
+        <div *ngIf="bookD.noOfCopy.errors" > Number Of Copy required</div>
+    </div>
+
+
+    <button *ngIf="editBookTemp ==''" (click)="saveBook()" type="button">Save</button>
+
+    <button *ngIf="editBookTemp !=''" (click)="updateBookInfo()" type="button">Update</button>
+
+    
+    
+<div class="container">
+  <h2>All Books</h2>
+     
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Sr.no</th>
+        <th>Book Name</th>
+        <th>Author</th>
+        <th>Publication</th>
+        <th>No Of Copy</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of allBooksList; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{book.bookName}}</td>
+        <td>{{book.author}}</td>
+        <td>{{book.publication}}</td>
+        <td>{{book.noOfCopy	}}</td>
+        <td>{{book.regiDate	}}</td>
+        <td>
+           <button type="button" (click)="editBook(book)" >Edit</button>
+           <button type="button" (click)="deleteBook(book.id)">Delete</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+</form>

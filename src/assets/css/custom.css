@@ -1,0 +1,317 @@
+.menu-w.menu-layout-mini ul.main-menu>li span {
+    display: block;
+    font-size: 13px;
+}
+
+.f-28{
+  font-size: 26px;
+}
+
+
+.dis-no {
+   display: none;
+}
+
+.h-90 {
+    height: 90px !important;
+}
+
+.f-12 {
+    font-size: 17px ! important;
+}
+
+.f-14 {
+    font-size: 14px ! important;
+}
+
+.f-16 {
+    font-size: 16px ! important;
+}
+
+
+.padded-vv {
+    padding: 4px 10px;
+}
+
+.fo-12 {
+    font-size: 12px ! important;
+}
+
+.p-8-24{
+    padding: 8px 24px ! important;
+}
+
+
+hr.myhr {
+    border-top: 3px double .copied::after {
+  position: absolute;
+  top: 12%;
+  right: 110%;
+  display: block;
+  content: "copied";
+  font-size: 0.75em;
+  padding: 2px 3px;
+  color: #fff;
+  background-color: #22a;
+  border-radius: 3px;
+  opacity: 0;
+  will-change: opacity, transform;
+  animation: showcopied 1.5s ease;
+}
+}
+@keyframes showcopied {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.p-17 {
+    padding: 24px ! important;
+}
+
+
+
+
+.projects-list .project-box+.project-box {
+    margin-top: 13px;
+}
+
+.success-bg-img {
+    background-image: url(../img/profile_bg21.png);
+}
+
+.info-bg-img {
+    background-image: url(../img/profile_bg33.png);
+}
+
+.warning-bg-img {
+    background-image: url(../img/profile_bg22.png);
+}
+
+
+
+
+.projects-list .project-head {
+    padding: 10px 40px;
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bl-success{
+    border-left: 8px double #64caaf;
+}
+
+.bl-warning{
+        border-left: 8px double #eec857 ! important;
+}
+
+
+.project-box {
+    min-height: 256px ! important;
+    margin-bottom: 17px ! important;
+}
+
+
+.user-profile.compact {
+        min-height: 256px ! important;
+    margin-bottom: 17px ! important;
+}
+
+.bg-gray {
+    background: #8080802b;
+}
+
+
+.logo-w a {
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+}
+
+.w-40{
+      width: 29%;
+    margin-top: 10px;
+}
+
+
+
+.copied::after {
+  position: absolute;
+  top: 15%;
+  right: 50%;
+  display: block;
+  content: "Copied Referral Code ";
+  font-size: 0.75em;
+  padding: 2px 3px;
+  color: #fff;
+  background-color: #22a;
+  border-radius: 3px;
+  opacity: 0;
+  will-change: opacity, transform;
+  animation: showcopied 1.5s ease;
+}
+
+@keyframes showcopied {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+input#website {
+    padding: 2px 10px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px 0px 0px 5px;
+}
+
+button#mycopybtn {
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+select.form-contro1l {
+    background: white;
+    padding: 4px 12px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 0.85em;
+    white-space: normal ! important;
+}
+
+
+
+.table tfoot th, .table thead th {
+    font-size: 12px;
+    text-transform: uppercase;
+    border-top: none;
+}
+
+.mh-450{    min-height: 449px ! important;}
+
+
+.chat-extra-actions i {
+    font-size: 22px;
+}
+
+
+
+.bg-mint {
+    background-color: #26a69a;
+    border-color: #26a69a;
+    color: #fff;
+}
+
+
+.bg-myred {
+    background-color: #f44336;
+    border-color: #f44336;
+}
+
+.bg-myyellow {
+    background-color: #ffb300;
+    border-color: #ffb300;
+}
+
+.bg-myblue {
+    background-color: #03a9f4;
+    border-color: #03a9f4;
+}
+
+/* login css start here  */
+.login-body {
+  background: url(../img/login-bg.jpg) no-repeat center center fixed  !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.panel-default {
+opacity: 0.9;
+margin-top:30px;
+}
+.form-group.last { margin-bottom:0px; }
+.panel-default {
+    opacity: 0.9;
+    margin-top: 30px;
+    border-color: #ddd;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #315176;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color:#25476a;
+    border-color: #ddd;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.panel-body {
+    padding: 15px;
+}
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.control-label {
+    text-align: right;
+    padding-top: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.panel-footer {
+    padding: 10px 15px;
+    background-color:#25476a;
+    color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.panel-footer a{
+  color: #00fff4;
+}
+/* login css close here */

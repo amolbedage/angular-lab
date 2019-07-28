@@ -1,0 +1,47 @@
+<p>
+  Issue-book 
+</p>
+<div class="container">
+  <div class="rows">
+    <div class="col-sm-12">
+       
+           <div class="col-sm-3">
+              <p>Enter Stud ID</p>
+             <input  placeholder="Enter Stud ID " (keyup)="searchStud($event.target.value)">
+             <ul *ngIf="studInfo">
+               <li *ngFor="let info of studInfo ">
+                 <b  style="cursor: pointer;" (click)="selectedStud(info)">
+                   {{ info.fullName }}
+                 </b>
+               </li>
+             </ul>
+              <p *ngIf="studInfo==''"> Data Not Found</p>   
+             <br/>
+           
+           </div>
+           
+           
+           <div class="col-sm-3">
+              <p> Enter Book Name </p>
+             <input  placeholder="Enter Book Name " (keyup)="searchBook($event.target.value)">
+             <ul *ngIf="bookInfo">
+               <li *ngFor="let info of bookInfo ">
+                 <b  style="cursor: pointer;" (click)="selectedBook(info)">
+                   {{ info.bookName }}  ( Total Copy {{info.noOfCopy}} available Copy {{info.availableCopy}} )
+                 </b>
+               </li>
+             </ul>
+              <p *ngIf="bookInfo==''"> Data Not Found</p>   
+             <br/>
+           
+           </div>
+        </div>
+
+  </div>
+  <div class="rows col-sm1-12">
+      <p> Stud Roll No : {{rollNo}}</p>
+      <p> Book Name : {{bookName}}</p>
+      <button [disabled]="rollNo=='' ||bookName=='' " (click)=issueBook(rollNo,bookId)> Submit</button>
+      </div>
+
+</div>
